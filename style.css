@@ -14,10 +14,7 @@
   --shadow: 0 2px 24px rgba(59,234,110,0.10);
 }
 
-html {
-  scrollbar-width: thin;
-  scrollbar-color: #00c853 transparent;
-}
+html { scroll-behavior: smooth; }
 
 body {
   background: var(--bg2);
@@ -832,6 +829,7 @@ body {
   height: 280px;      /* если нужна высота */
   object-fit: cover; /* заполняет блок без искажений */
   display: block;    /* убирает лишний отступ снизу */
+
 }
 
 .review-img-wrap img {
@@ -1324,22 +1322,3 @@ body {
     display: none; /* Это самый простой и чистый вариант для мобилок */
   }
 }
-
-/* ── кастомный скроллбар ── */
-::-webkit-scrollbar {
-  width: 4px;
-}
-
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #00c853;
-  border-radius: 100px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #00e676;
-}
-

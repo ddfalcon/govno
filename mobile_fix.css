@@ -1,0 +1,275 @@
+/* ════════════════════════════
+   МОБИЛЬНЫЙ АДАПТИВ — полный фикс
+════════════════════════════ */
+
+@media (max-width: 768px) {
+
+  /* ── общее ── */
+  body {
+    overflow-x: hidden;
+  }
+
+  /* ── hero ── */
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 70px 20px 90px;
+    text-align: center;
+    gap: 32px;
+  }
+
+  .hero-left { order: 2; }
+  .hero-right { order: 1; }
+
+  .badge {
+    display: inline-flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-sub {
+    margin: 0 auto 20px;
+    max-width: 100%;
+  }
+
+  .hero-micro {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
+  }
+
+  .hero-micro span { margin-right: 0; }
+
+  .btn-cta {
+    width: 100%;
+    justify-content: center;
+    animation: none;
+  }
+
+  .btn-hint { text-align: center; }
+
+  .stats {
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 36px;
+  }
+
+  .stat-label { white-space: normal; text-align: center; }
+
+  .photo-card {
+    width: clamp(200px, 65vw, 280px);
+    margin: 0 auto;
+  }
+
+  .scroll-hint { display: none; }
+
+  /* ── section-badge по центру везде ── */
+  .section-badge {
+    display: block;
+    text-align: center;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* ── pain ── */
+  .pain {
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .pain-title { text-align: center; }
+  .pain-title .accent { display: block; }
+
+  .pain-sub {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .pain-cards { max-width: 100%; }
+
+  .pain-card {
+    padding: 24px 20px;
+    text-align: left;
+    transform: none !important;
+  }
+
+  .pain-card::before { font-size: 4rem; }
+
+  /* ── what ── */
+  .what {
+    padding: 50px 20px;
+    border-radius: 24px;
+    margin: 0 12px;
+    width: calc(100% - 24px);
+    text-align: center;
+  }
+
+  .what-title { text-align: center; }
+  .what-desc { text-align: left; }
+
+  .what-list { align-items: flex-start; }
+  .what-item { text-align: left; }
+
+  /* ── steps ── */
+  .steps {
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .steps-title { text-align: center; }
+  .steps-sub {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .step-card {
+    padding: 24px 20px;
+    transform: none !important;
+  }
+
+  .step-head {
+    padding-left: 0;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .step-text { padding-left: 0; }
+  .step-card::before { display: none; }
+
+  .steps-result {
+    padding: 24px 20px;
+    text-align: center;
+  }
+
+  /* ── inside ── */
+  .inside {
+    padding: 50px 20px;
+    border-radius: 24px;
+    margin: 0 12px;
+    width: calc(100% - 24px);
+    text-align: center;
+  }
+
+  .inside-title { text-align: center; }
+
+  .inside-sub {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .inside-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .inside-card {
+    text-align: left;
+    transform: none !important;
+  }
+
+  /* ── results ── */
+  .results {
+    grid-template-columns: 1fr;
+    padding: 60px 20px;
+    gap: 36px;
+    text-align: center;
+  }
+
+  .results-title { text-align: center; }
+  .results-sub {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .results-photo-card {
+    width: clamp(200px, 70vw, 300px);
+    margin: 0 auto;
+  }
+
+  /* ── testimonials ── */
+  .testimonials {
+    margin: 0 12px 40px;
+    width: calc(100% - 24px);
+    padding: 50px 16px;
+    border-radius: 24px;
+  }
+
+  .reviews-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .review-card { transform: none !important; }
+
+  .reviews-stats {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  /* ── comparison ── */
+  .comparison {
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .comparison-title { text-align: center; font-size: 1.8rem; }
+
+  .comparison-sub {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .comparison-table {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .comparison-row {
+    min-width: 700px;
+  }
+
+  /* ── final cta ── */
+  .final-cta { padding: 70px 20px; }
+
+  .final-wrap { text-align: center; }
+
+  .final-photo-card {
+    width: clamp(160px, 55vw, 240px);
+    margin: 0 auto 40px;
+  }
+
+  .final-title {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .final-sub,
+  .final-note { text-align: left; }
+
+  .final-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .final-features {
+    justify-content: center;
+    gap: 10px;
+    font-size: 12px;
+  }
+}
+
+/* ── очень маленькие экраны (iPhone SE и т.д.) ── */
+@media (max-width: 375px) {
+  .hero-title { font-size: 1.8rem; }
+  .pain-title, .steps-title, .inside-title,
+  .results-title, .comparison-title, .final-title {
+    font-size: 1.6rem;
+  }
+  .reviews-stats { grid-template-columns: 1fr; }
+}
