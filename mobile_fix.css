@@ -273,3 +273,44 @@
   }
   .reviews-stats { grid-template-columns: 1fr; }
 }
+
+/* скрываем средние колонки, оставляем критерий + AutoFunnels */
+@media (max-width: 768px) {
+  .comparison-table {
+    overflow-x: visible;
+  }
+
+  .comparison-row {
+    min-width: unset;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* скрываем колонки Дропшиппинг и SMMA */
+  .comparison-row > div:nth-child(2),
+  .comparison-row > div:nth-child(3) {
+    display: none;
+  }
+
+  /* заголовок AutoFunnels колонки */
+  .comparison-head .highlight {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 768px) {
+  .comparison-head {
+    grid-template-columns: 1fr !important;
+  }
+
+  .comparison-head > div:nth-child(1),
+  .comparison-head > div:nth-child(2),
+  .comparison-head > div:nth-child(3) {
+    display: none !important;
+  }
+
+  .comparison-head > div.highlight {
+    display: block !important;
+    text-align: center !important;
+    grid-column: 1 / -1;
+  }
+}
