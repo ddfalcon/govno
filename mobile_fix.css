@@ -314,3 +314,19 @@
     grid-column: 1 / -1;
   }
 }
+
+@media (max-width: 768px) {
+  .reviews-grid {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    padding-bottom: 12px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .review-card {
+    flex: 0 0 80vw;
+    scroll-snap-align: start;
+  }
+}
